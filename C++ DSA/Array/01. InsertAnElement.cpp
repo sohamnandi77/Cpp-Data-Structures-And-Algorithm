@@ -43,6 +43,6 @@ int main()
         cout << arr[i] << " ";
     }
 
-    delete arr;
+    delete[] arr;
     return 0;
 }

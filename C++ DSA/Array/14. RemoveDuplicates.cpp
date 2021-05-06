@@ -2,9 +2,9 @@
 using namespace std;
 
 //* NOOB Method
-int remDupsNooB(int arr[], int n)
+int removeDuplicateNoob(int arr[], int n)
 {
-    int temp[n];
+    int *temp = new int[n];
     temp[0] = arr[0];
     int res = 1;
     for (int i = 0; i < n; i++)
@@ -19,7 +19,7 @@ int remDupsNooB(int arr[], int n)
     {
         arr[i] = temp[i];
     }
-
+    delete[] temp;
     return res;
 }
 

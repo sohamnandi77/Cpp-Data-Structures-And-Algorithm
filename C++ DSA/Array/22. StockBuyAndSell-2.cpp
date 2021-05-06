@@ -4,17 +4,18 @@
 
 #include <iostream>
 #include <vector>
+#define ll long long
 using namespace std;
 
 // * Printing the range of transactions - Gfg
-vector<vector<int>> stockBuySell(vector<int> price, int n)
+vector<vector<ll>> stockBuySell(vector<ll> price, ll n)
 {
-    vector<vector<int>> res;
+    vector<vector<ll>> res;
 
     if (n == 1)
         return res;
 
-    int i = 0;
+    ll i = 0;
 
     while (i < n - 1)
     {
@@ -25,22 +26,22 @@ vector<vector<int>> stockBuySell(vector<int> price, int n)
         if (i == n - 1)
             break;
 
-        int buy = i++;
+        ll buy = i++;
 
         // ? searching for minima
         while (i < n && price[i] >= price[i - 1])
             i++;
 
-        int sell = i - 1;
+        ll sell = i - 1;
         res.push_back({buy, sell});
     }
     return res;
 }
 
-int maxProfitOP(int arr[], int n)
+ll maxProfitOP(ll arr[], ll n)
 {
-    int profit = 0;
-    for (int i = 1; i < n; i++)
+    ll profit = 0;
+    for (ll i = 1; i < n; i++)
     {
         if (arr[i] > arr[i - 1])
         {
@@ -52,11 +53,11 @@ int maxProfitOP(int arr[], int n)
 
 int main()
 {
-    int arr[] = {1, 5, 3, 8, 12}, n = 5;
+    ll arr[] = {1, 5, 3, 8, 12}, n = 5;
     cout << maxProfitOP(arr, n) << endl;
-    vector<int> price{1, 5, 3, 8, 12};
-    vector<vector<int>> ans = stockBuySell(price, n);
-    for (int i = 0; i < ans.size(); ++i)
+    vector<ll> price{1, 5, 3, 8, 12};
+    vector<vector<ll>> ans = stockBuySell(price, n);
+    for (ll i = 0; i < ans.size(); ++i)
     {
         cout << "(" << ans[i][0] << " " << ans[i][1] << ") ";
     }

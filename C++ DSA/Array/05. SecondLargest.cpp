@@ -1,9 +1,10 @@
 #include <iostream>
+#define ll long long
 using namespace std;
-int secondLargest(int arr[], int n)
+ll secondLargest(ll arr[], ll n)
 {
-    int res = -1, largest = 0;
-    for (int i = 0; i < n; i++)
+    ll res = INT_MIN, largest = 0;
+    for (ll i = 1; i < n; i++)
     {
         if (arr[i] > arr[largest])
         {
@@ -13,15 +14,17 @@ int secondLargest(int arr[], int n)
         else if (arr[i] != arr[largest])
         {
 
-            if (res == -1 || arr[i] > arr[res])
+            if (res == INT_MIN || arr[i] > arr[res])
                 res = i;
         }
     }
+    if (res == INT_MIN)
+        res = -1;
     return res;
 }
 int main()
 {
-    int arr[] = {10, 10, 10, 10, 10};
+    ll arr[] = {5, 10, -2, 8, 10};
     cout << secondLargest(arr, 5) << endl;
     return 0;
 }

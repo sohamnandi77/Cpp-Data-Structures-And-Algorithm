@@ -19,8 +19,6 @@ int maxSumNoob(int arr[], int n)
 
 //* OP Method - Kadane's Algorithm
 
-// int max(int a, int b) { return a > b ? a : b; }
-
 int maxSumOP(int arr[], int n)
 {
     int maxEnding = arr[0], res = arr[0];

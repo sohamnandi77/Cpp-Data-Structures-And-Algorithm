@@ -3,8 +3,6 @@ using namespace std;
 
 //* OP Method - Kadane's Algorithm
 
-// int max(int a, int b) { return a > b ? a : b; }
-
 void printSubarrayMaxSum(int arr[], int n)
 {
     int endIndex = 0, currMax = arr[0], globalMax = arr[0];

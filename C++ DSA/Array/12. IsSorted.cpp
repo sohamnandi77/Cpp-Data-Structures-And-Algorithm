@@ -1,12 +1,13 @@
 #include <iostream>
+#define ll long long
 using namespace std;
-int isSorted(int arr[], int n)
+ll isSorted(ll arr[], ll n)
 {
 
-    int increase_sorted = 1;
-    int decrease_sorted = 1;
+    ll increase_sorted = 1;
+    ll decrease_sorted = 1;
 
-    for (int i = 0; i < n; i++)
+    for (ll i = 0; i < n; i++)
     {
         if (arr[i + 1] < arr[i])
         {
@@ -14,7 +15,7 @@ int isSorted(int arr[], int n)
             break;
         }
     }
-    for (int i = 0; i < n; i++)
+    for (ll i = 0; i < n; i++)
     {
         if (arr[i + 1] > arr[i])
         {
@@ -29,9 +30,9 @@ int isSorted(int arr[], int n)
 int main()
 {
 
-    int arr[4] = {4, 4, 4, 5};
-    int N = 4;
-    cout << isSorted(arr, N);
+    ll arr[4] = {4, 4, 4, 5};
+    ll n = 4;
+    cout << isSorted(arr, n);
     cout << endl;
 
     return 0;

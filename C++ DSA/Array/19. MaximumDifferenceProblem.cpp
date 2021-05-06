@@ -31,9 +31,7 @@ int maxDiffOP(int arr[], int n)
 }
 int main()
 {
-
     int arr[] = {2, 3, 10, 6, 4, 8, 1}, n = 7;
-
     cout << "Noob Solution" << endl;
     cout << maxDiffNoob(arr, n) << endl;
     cout << "OP Solution" << endl;

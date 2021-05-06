@@ -4,7 +4,6 @@ using namespace std;
 void printFreq(int arr[], int n)
 {
     int freq = 1, i = 1;
-
     while (i < n)
     {
         while (i < n && arr[i] == arr[i - 1])

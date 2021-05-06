@@ -1,8 +1,9 @@
 #include <iostream>
+#define ll long long
 using namespace std;
-int FirstIndex(int arr[], int n, int x)
+ll FirstIndex(ll arr[], ll n, ll x)
 {
-  for (int i = 0; i < n - 1; i++)
+  for (ll i = 0; i < n - 1; i++)
   {
     if (arr[i] == x)
     {
@@ -13,9 +14,9 @@ int FirstIndex(int arr[], int n, int x)
 }
 int main()
 {
-  int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-  int size = *(&arr + 1) - arr;
-  int x = 5;
+  ll arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+  ll size = *(&arr + 1) - arr;
+  ll x = 5;
   cout << FirstIndex(arr, size, x) << endl;
   return 0;
 }

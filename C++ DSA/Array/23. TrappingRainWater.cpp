@@ -1,26 +1,22 @@
 #include <iostream>
-#include <cmath>
+#define ll long long
 using namespace std;
-int max(int a, int b)
-{
-    return a > b ? a : b;
-}
 
 // Noob Solution
-int getWaterNoob(int arr[], int n)
+ll getWaterNoob(ll arr[], ll n)
 {
-    int res = 0;
+    ll res = 0;
 
-    for (int i = 1; i < n - 1; i++)
+    for (ll i = 1; i < n - 1; i++)
     {
-        int lMax = arr[i];
+        ll lMax = arr[i];
 
-        for (int j = 0; j < i; j++)
+        for (ll j = 0; j < i; j++)
             lMax = max(lMax, arr[j]);
 
-        int rMax = arr[i];
+        ll rMax = arr[i];
 
-        for (int j = i + 1; j < n; j++)
+        for (ll j = i + 1; j < n; j++)
             rMax = max(rMax, arr[j]);
 
         res += (min(lMax, rMax) - arr[i]);
@@ -31,24 +27,24 @@ int getWaterNoob(int arr[], int n)
 
 // Space Solution
 
-int getWaterSpace(int arr[], int n)
+ll getWaterSpace(ll arr[], ll n)
 {
-    int res = 0;
-    int *lMax = new int[n];
-    int *rMax = new int[n];
+    ll res = 0;
+    ll *lMax = new ll[n];
+    ll *rMax = new ll[n];
 
     // left array
     lMax[0] = arr[0];
-    for (int i = 1; i < n; i++)
+    for (ll i = 1; i < n; i++)
         lMax[i] = max(arr[i], lMax[i - 1]);
 
     // right array
     rMax[n - 1] = arr[n - 1];
-    for (int i = n - 2; i >= 0; i--)
+    for (ll i = n - 2; i >= 0; i--)
         rMax[i] = max(arr[i], rMax[i + 1]);
 
     // Water stored
-    for (int i = 1; i < n - 1; i++)
+    for (ll i = 1; i < n - 1; i++)
         res = res + (min(lMax[i], rMax[i]) - arr[i]);
 
     delete[] lMax, rMax;
@@ -57,9 +53,9 @@ int getWaterSpace(int arr[], int n)
 
 // OP Solution -  Two Pointer Approach
 
-int getWaterOP(int arr[], int n)
+ll getWaterOP(ll arr[], ll n)
 {
-    int res = 0, l = 0, r = n - 1, lMax = 0, rMax = 0;
+    ll res = 0, l = 0, r = n - 1, lMax = 0, rMax = 0;
 
     while (l <= r)
     {
@@ -86,7 +82,7 @@ int getWaterOP(int arr[], int n)
 int main()
 {
 
-    int arr[] = {3, 0, 1, 2, 5}, n = 5;
+    ll arr[] = {3, 0, 1, 2, 5}, n = 5;
 
     cout << "Noob Solution" << endl;
     cout << getWaterNoob(arr, n) << endl;

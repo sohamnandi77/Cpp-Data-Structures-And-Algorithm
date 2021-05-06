@@ -22,7 +22,6 @@ int main()
 {
 
     int arr[] = {0, 1, 0, 1, 1, 0, 1}, n = 7;
-
     cout << maxConsecutive1s(arr, n);
     return 0;
 }

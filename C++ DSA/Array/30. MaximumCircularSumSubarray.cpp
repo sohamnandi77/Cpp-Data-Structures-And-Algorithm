@@ -27,7 +27,6 @@ int maxCircularSum(int *arr, int n)
     }
 
     int circularSum = arrSum + maxSum(arr, n);
-
     return max(circularSum, maxNormal);
 }
 
