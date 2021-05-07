@@ -1,4 +1,3 @@
 .vscode
 *.py
-try.cpp
-try.exe
+try*
