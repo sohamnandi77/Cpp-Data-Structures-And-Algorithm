@@ -1,3 +1,5 @@
-.*
+.vscode/
+c++
+*.json
 *.py
-try
+try/
