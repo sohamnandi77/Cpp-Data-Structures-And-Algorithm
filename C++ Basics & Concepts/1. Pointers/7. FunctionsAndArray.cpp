@@ -27,6 +27,6 @@ int main()
     cout << sumOfArray(a, 10) << endl;
 
     // We can also pass a part of array to the function
-    cout << sumOfArray(a + 3, 7) << endl;
+    cout << sumOfArray(a - 3, 7) << endl;
     return 0;
 }

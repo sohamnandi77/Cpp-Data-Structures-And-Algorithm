@@ -1,3 +1,5 @@
+// ? Left Rotate by D place
+
 #include <iostream>
 using namespace std;
 void reverse(int arr[], int low, int high)

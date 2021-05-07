@@ -1,3 +1,5 @@
+// ? Insert an Element into an Array 
+
 #include <iostream>
 using namespace std;
 int insert(int *arr, int n, int x, int cap, int pos)

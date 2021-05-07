@@ -1,8 +1,9 @@
+// ? Find the maximum difference between two elements such that j > i
+
 #include <iostream>
 using namespace std;
 
 // Noob Method
-
 int maxDiffNoob(int arr[], int n)
 {
     int res = arr[1] - arr[0];

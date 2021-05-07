@@ -1,3 +1,5 @@
+// ? Print the frequencies of Element in a sorted array
+
 #include <iostream>
 using namespace std;
 

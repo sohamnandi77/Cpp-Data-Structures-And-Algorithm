@@ -1,7 +1,9 @@
+// ? Find the Floor of Square root of a Number
+//* See Searching for a OP Method
+
 #include <iostream>
 using namespace std;
 // Noob Method
-//* See Searching for a OP Method
 int sqRootFloor(int x)
 {
     int i = 1;

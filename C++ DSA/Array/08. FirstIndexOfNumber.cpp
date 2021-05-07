@@ -1,3 +1,6 @@
+// ? First Index of a Number
+// * Also check the recursive Method in Recursion
+
 #include <iostream>
 #define ll long long
 using namespace std;

@@ -1,3 +1,5 @@
+// ? Delete an Element into an Array
+
 #include <iostream>
 using namespace std;
 int deleteEle(int arr[], int n, int x)

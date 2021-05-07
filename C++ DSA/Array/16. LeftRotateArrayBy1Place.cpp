@@ -1,3 +1,5 @@
+// ? Left Rotate by 1 place
+
 #include <iostream>
 using namespace std;
 void lRotateOne(int arr[], int n)

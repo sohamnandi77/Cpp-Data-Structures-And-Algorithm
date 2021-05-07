@@ -1,3 +1,5 @@
+// ? Given an array a[ ] of size N. The task is to check if array is sorted or not. A sorted array can either be increasingly sorted or decreasingly sorted. Also consider duplicate elements to be sorted.
+
 #include <iostream>
 #define ll long long
 using namespace std;

@@ -1,3 +1,5 @@
+// ? Smallest Element in the Array
+
 #include <iostream>
 using namespace std;
 int getSmallestOP(int a[], int n)

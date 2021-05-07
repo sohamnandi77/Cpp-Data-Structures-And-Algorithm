@@ -1,3 +1,5 @@
+// ? Check if array is sorted or not
+
 #include <iostream>
 using namespace std;
 bool checkSorted(int arr[], int n)

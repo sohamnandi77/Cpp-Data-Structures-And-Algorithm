@@ -1,3 +1,5 @@
+// ? Second Smallest Element in the Array
+
 #include <iostream>
 #define ll long long
 using namespace std;
