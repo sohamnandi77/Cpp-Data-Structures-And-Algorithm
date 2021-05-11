@@ -6,8 +6,8 @@
 
 | Current Status|     Stats     |
 | :------------: | :----------: |
-| Total C++ Problems | 188 |
-| Current Daily Streak| 11 |
+| Total C++ Problems |  |
+| Current Daily Streak|  |
 
 </center>
 
