@@ -5,7 +5,7 @@ class Node
 public:
     int data;
     Node *next;
-    Node(int data)
+    Node(int data) //* constructor
     {
         this->data = data;
         next = NULL;
@@ -28,8 +28,8 @@ int main()
     Node *n3 = new Node(10);
     Node *head2 = n3;
     Node *n4 = new Node(20);
-
     n3->next = n4;
+
     cout << n3->data << "->" << n4->data << endl;
 
     return 0;

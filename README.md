@@ -2,12 +2,13 @@
 
 <center>
 
-![alt tag](https://i.ibb.co/Bn4S3Fk/A-Little-Progress-Each-Day-Adds-Up-to-Big-Result.jpg)
+<img src = "https://i.ibb.co/Bn4S3Fk/A-Little-Progress-Each-Day-Adds-Up-to-Big-Result.jpg" width = 320px height = 320px>
+![alt tag]()
 
-| Current Status|     Stats     |
-| :------------: | :----------: |
-| Total C++ Problems |  |
-| Current Daily Streak|  |
+|    Current Status    | Stats |
+| :------------------: | :---: |
+|  Total C++ Problems  |  104  |
+| Current Daily Streak |   3   |
 
 </center>
 

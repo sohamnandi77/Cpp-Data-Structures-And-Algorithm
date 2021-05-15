@@ -24,9 +24,7 @@ void rearrangeArray(ll arr[], int n)
         i++;
     }
     for (ll i = 0; i < n; i++)
-    {
         arr[i] /= max_element;
-    }
 }
 
 int main()
