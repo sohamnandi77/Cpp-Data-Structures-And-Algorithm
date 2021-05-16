@@ -27,7 +27,7 @@ Data structures & Algorithms are an essential part of programming. It comes unde
 
 ## Basic Concepts
 
-<h4>Pointers</h4>
+<h3>Pointers</h3>
 <details>
 
 | Topics                                      | Code |
@@ -44,7 +44,7 @@ Data structures & Algorithms are an essential part of programming. It comes unde
 
 </details>
 
-<h4>Reference Variables</h4>
+<h3>Reference Variables</h3>
 <details>
 
 | Topics                             | Code |
@@ -53,7 +53,7 @@ Data structures & Algorithms are an essential part of programming. It comes unde
 | <a href= "">Pass By Reference</a>  |      |
 
 </details>
-<h4>Dynamic Memory Allocation</h4>
+<h3>Dynamic Memory Allocation</h3>
 <details>
 
 | Topics                        | Code |
@@ -63,7 +63,7 @@ Data structures & Algorithms are an essential part of programming. It comes unde
 
 </details>
 
-<h4>Important Keywords</h4>
+<h3>Important Keywords</h3>
 <details>
 
 | Topics                             | Code |
@@ -77,7 +77,7 @@ Data structures & Algorithms are an essential part of programming. It comes unde
 | <a href= "">Constant Pointer</a>   |      |
 
 </details>
-<h4>Pattern Questions</h4>
+<h3>Pattern Questions</h3>
 <details>
 
 | Topics                 | Code |
@@ -85,7 +85,7 @@ Data structures & Algorithms are an essential part of programming. It comes unde
 | <a href= "">Define</a> |      |
 
 </details>
-<h4>OOPs Concepts</h4>
+<h3>OOPs Concepts</h3>
 <details>
 
 | Topics                                | Code |
@@ -110,7 +110,9 @@ Standard Template Library
 
 ## Data Structures
 
-    <h4>Arrays</h4>
+Data structure is a way or a format how your data is stored in memory for effecient usage and retrieval.
+
+<h3>Arrays</h3>
 
 <details>
 
@@ -136,3 +138,7 @@ Standard Template Library
 </details>
 
 ## Algorithms
+
+An algorithm is a set of instructions that are used to accomplish a task, such as finding the largest number in a list, removing all the red cards from a deck of playing cards, sorting a collection of names, figuring out an average movie rating from just your friend's opinion
+
+Algorithms are not limited to computers. They are like a set of step-by-step instructions or an even a recipe, containing things you need, steps to do, the order to do them, conditions to look for, and expected results.
