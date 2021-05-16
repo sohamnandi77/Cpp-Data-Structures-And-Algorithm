@@ -4,7 +4,7 @@
 using namespace std;
 int getSmallestOP(int a[], int n)
 {
-    int res = 0;
+    int res = INT_MAX;
     for (int i = 1; i < n; i++)
     {
         if (a[i] < a[res])

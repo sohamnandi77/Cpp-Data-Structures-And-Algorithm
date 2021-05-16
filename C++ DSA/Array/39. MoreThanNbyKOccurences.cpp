@@ -10,10 +10,8 @@ int countOccurenceSpace(int *arr, int n, int k)
     for (int i = 0; i < n; i++)
         a[i]++;
     for (int i = 1; i < 100000; i++)
-    {
         if (a[i] > diff)
             count++;
-    }
     delete[] a;
     return count;
 }

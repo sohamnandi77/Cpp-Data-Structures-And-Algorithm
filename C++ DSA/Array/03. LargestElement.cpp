@@ -25,13 +25,11 @@ int getLargestNoob(int a[], int n)
 // OP Method
 int getLargestOP(int a[], int n)
 {
-    int res = 0;
+    int res = INT_MIN;
     for (int i = 1; i < n; i++)
     {
         if (a[i] > a[res])
-        {
             res = i;
-        }
     }
     return res;
 }

@@ -39,9 +39,7 @@ void countFreqOP(int *arr, int n)
     for (int i = 0; i < n; i++)
         h[arr[i]]++;
     for (auto e : h)
-    {
         cout << e.first << " " << e.second << endl;
-    }
 }
 
 int main()
