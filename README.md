@@ -27,7 +27,7 @@ Data structures & Algorithms are an essential part of programming. It comes unde
 
 ## Basic Concepts
 
-<summary><h3>Pointers</h3></summary>
+<h4>Pointers</h4>
 <details>
 
 | Topics                                      | Code |
@@ -44,7 +44,7 @@ Data structures & Algorithms are an essential part of programming. It comes unde
 
 </details>
 
-<summary><h3>Reference Variables</h3></summary>
+<h4>Reference Variables</h4>
 <details>
 
 | Topics                             | Code |
@@ -53,7 +53,7 @@ Data structures & Algorithms are an essential part of programming. It comes unde
 | <a href= "">Pass By Reference</a>  |      |
 
 </details>
-<summary><h3>Dynamic Memory Allocation</h3></summary>
+<h4>Dynamic Memory Allocation</h4>
 <details>
 
 | Topics                        | Code |
@@ -63,7 +63,7 @@ Data structures & Algorithms are an essential part of programming. It comes unde
 
 </details>
 
-<summary><h3>Important Keywords</h3></summary>
+<h4>Important Keywords</h4>
 <details>
 
 | Topics                             | Code |
@@ -77,7 +77,7 @@ Data structures & Algorithms are an essential part of programming. It comes unde
 | <a href= "">Constant Pointer</a>   |      |
 
 </details>
-<summary><h3>Pattern Questions</h3></summary>
+<h4>Pattern Questions</h4>
 <details>
 
 | Topics                 | Code |
@@ -85,7 +85,7 @@ Data structures & Algorithms are an essential part of programming. It comes unde
 | <a href= "">Define</a> |      |
 
 </details>
-<summary><h3>OOPs Concepts</h3></summary>
+<h4>OOPs Concepts</h4>
 <details>
 
 | Topics                                | Code |
@@ -110,9 +110,8 @@ Standard Template Library
 
 ## Data Structures
 
-<summary>
-    <h3>Arrays</h3>
-</summary>
+    <h4>Arrays</h4>
+
 <details>
 
 | Topics / Questions                                                                    | Code |
