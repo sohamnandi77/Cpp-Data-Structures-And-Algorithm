@@ -20,7 +20,6 @@ int maxSumNoob(int arr[], int n)
 }
 
 //* OP Method - Kadane's Algorithm
-
 int maxSumOP(int arr[], int n)
 {
     int maxEnding = arr[0], res = arr[0];
