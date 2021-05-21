@@ -1,16 +1,12 @@
 #include <iostream>
 using namespace std;
 
-// # The idea we use is that one half of the array is always sorted.
-
 int minNumberNoob(int *arr, int low, int high) // # O(n) solution
 {
     if (arr[high] > arr[low])
         return arr[low];
     while (arr[low] > arr[high])
-    {
         high--;
-    }
     return arr[high + 1];
 }
 

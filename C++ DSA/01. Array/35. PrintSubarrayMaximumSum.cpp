@@ -6,9 +6,17 @@ using namespace std;
 void printSubarrayMaxSum(int arr[], int n)
 {
     int endIndex = 0, currMax = arr[0], globalMax = arr[0];
+    int startIndex = 0;
     for (int i = 1; i < n; i++)
     {
-        currMax = max((currMax + arr[i]), arr[i]);
+        // currMax = max((currMax + arr[i]), arr[i]);
+        if (currMax + arr[i] >= arr[i])
+            currMax += arr[i];
+        else
+        {
+            currMax = arr[i];
+            startIndex = i;
+        }
         if (currMax > globalMax)
         {
             globalMax = currMax;
@@ -16,20 +24,18 @@ void printSubarrayMaxSum(int arr[], int n)
         }
     }
 
-    int startIndex = endIndex;
+    // int startIndex = endIndex;
 
-    while (startIndex >= 0)
-    {
-        globalMax -= arr[startIndex];
-        if (globalMax == 0)
-            break;
-        startIndex--;
-    }
+    // while (startIndex >= 0)
+    // {
+    //     globalMax -= arr[startIndex];
+    //     if (globalMax == 0)
+    //         break;
+    //     startIndex--;
+    // }
 
     for (int i = startIndex; i <= endIndex; i++)
-    {
         cout << arr[i] << " ";
-    }
 }
 
 int main()

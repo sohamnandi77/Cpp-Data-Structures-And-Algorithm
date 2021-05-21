@@ -58,8 +58,6 @@ int main()
     vector<ll> price{1, 5, 3, 8, 12};
     vector<vector<ll>> ans = stockBuySell(price, n);
     for (ll i = 0; i < ans.size(); ++i)
-    {
         cout << "(" << ans[i][0] << " " << ans[i][1] << ") ";
-    }
     return 0;
 }

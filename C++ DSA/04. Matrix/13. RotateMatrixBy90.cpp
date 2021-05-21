@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm>
 using namespace std;
 
 const int N = 3;
@@ -22,7 +23,7 @@ void Transpose(int arr[N][N])
             swap(arr[i][j], arr[j][i]);
 }
 
-void AntiRotate90(int arr[N][N])
+void Rotate90(int arr[N][N])
 {
     Transpose(arr);
 
@@ -31,8 +32,17 @@ void AntiRotate90(int arr[N][N])
     {
         int low = 0, high = N - 1;
         while (low < high)
-            swap(arr[low++][i], arr[high--][i]);
+            swap(arr[i][low++], arr[i][high--]);
     }
+}
+
+void AntiRotate90STL(int arr[N][N])
+{
+    // * Reverse Rows
+    for (int i = 0; i < N; i++)
+        reverse(arr[i], arr[i] + N); //# here arr[i] is a row pointer
+
+    Transpose(arr);
 }
 
 void print(int arr[N][N])
@@ -52,7 +62,8 @@ int main()
     print(arr);
 
     // AntiRotate90Noob(arr);
-    AntiRotate90(arr);
+    // Rotate90(arr);
+    AntiRotate90STL(arr);
 
     cout << "After Rotation" << endl;
     print(arr);

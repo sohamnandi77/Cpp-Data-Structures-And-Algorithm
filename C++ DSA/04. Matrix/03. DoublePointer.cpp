@@ -7,9 +7,7 @@ int main()
     int **arr;
     arr = new int *[m];
     for (int i = 0; i < m; i++)
-    {
         arr[i] = new int[n];
-    }
     // * row loop
     for (int i = 0; i < m; i++)
     {

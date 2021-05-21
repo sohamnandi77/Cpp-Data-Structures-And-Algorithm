@@ -51,6 +51,29 @@ void DNFsort(int *arr, int n)
     }
 }
 
+// * Another implementation of DNF sort using switch case
+void sort012(int arr[], int n)
+{
+    int low = 0, mid = 0, high = n - 1;
+    while (mid <= high)
+    {
+        switch (arr[mid])
+        {
+        case 0:
+            swap(arr[low++], arr[mid++]);
+            break;
+
+        case 1:
+            mid++;
+            break;
+
+        default:
+            swap(arr[mid], arr[high--]);
+            break;
+        }
+    }
+}
+
 int main()
 {
     int arr[] = {0, 1, 1, 2, 0, 1};
@@ -60,8 +83,9 @@ int main()
         cout << x << " ";
 
     cout << endl;
-    // SortNoob(arr, n);
+    SortNoob(arr, n);
     DNFsort(arr, n);
+    sort012(arr, n);
 
     cout << "After Segregating" << endl;
     for (int x : arr)

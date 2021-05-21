@@ -26,17 +26,11 @@ int main()
     // strcmp
     int res = strcmp(str, str3);
     if (res > 0)
-    {
         cout << "Greater" << endl;
-    }
     else if (res < 0)
-    {
         cout << "Smaller" << endl;
-    }
     else
-    {
         cout << "same" << endl;
-    }
 
     // strcpy
     char str4[5];

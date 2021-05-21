@@ -5,12 +5,7 @@ using namespace std;
 void reverse(int arr[], int low, int high)
 {
     while (low < high)
-    {
-        swap(arr[high], arr[low]);
-
-        low++;
-        high--;
-    }
+        swap(arr[high--], arr[low++]);
 }
 
 void leftRotate(int arr[], int d, int n)

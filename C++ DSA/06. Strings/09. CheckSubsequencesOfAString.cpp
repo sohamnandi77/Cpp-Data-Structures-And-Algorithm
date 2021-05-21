@@ -4,6 +4,8 @@
 using namespace std;
 
 // ? Time complexity - O(n)
+// * it is recommended to pass by reference
+// * if you are not updating the string, then it is recommended to use const
 bool checkSubseq(const string &str1, const string &str2)
 {
     int m = str2.length();
@@ -13,12 +15,8 @@ bool checkSubseq(const string &str1, const string &str2)
     if (n < m)
         return false;
     for (int i = 0; i < n && j < m; i++)
-    {
         if (str1[i] == str2[j])
-        {
             j++;
-        }
-    }
     return (j == m);
 }
 
@@ -28,7 +26,7 @@ bool checkSubseq(const string &str1, const string &str2)
 bool checkSubseqRecMain(const string &str1, const string &str2, int n, int m)
 {
     // base cases
-    //? order of bases cases matters
+    // ? order of bases cases matters
     if (m == 0)
         return true;
     if (n == 0)
@@ -40,6 +38,7 @@ bool checkSubseqRecMain(const string &str1, const string &str2, int n, int m)
     else
         return checkSubseqRecMain(str1, str2, n - 1, m);
 }
+
 bool checkSubseqRec(const string &str1, const string &str2)
 {
     return checkSubseqRecMain(str1, str2, str1.length(), str2.length());
