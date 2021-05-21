@@ -174,6 +174,9 @@ Data structure is a way or a format how your data is stored in memory for effeci
 | <a href= "">Binary Search - Recursive</a>                                             |      |
 | <a href= "">Binary Search - Iterative</a>                                             |      |
 | <a href= "">First Index Of Number - Recursive</a>                                     |      |
+| <a href= "">First Index Of Number - Iterative</a>                                     |      |
+| <a href= "">Last Index Of Number - Recursive</a>                                     |      |
+| <a href= "">Last Index Of Number - Iterative</a>                                     |      |
 
 </details>
 ## Algorithms
