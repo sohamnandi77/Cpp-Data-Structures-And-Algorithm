@@ -4,11 +4,6 @@
 
 <img src = "https://i.ibb.co/Bn4S3Fk/A-Little-Progress-Each-Day-Adds-Up-to-Big-Result.jpg" width = 320px height = 320px>
 
-|    Current Status    | Stats |
-| :------------------: | :---: |
-|  Total C++ Problems  |  104  |
-| Current Daily Streak |   5   |
-
 </center>
 
 - [Introduction](#introduction)
@@ -134,9 +129,53 @@ Data structure is a way or a format how your data is stored in memory for effeci
 | <a href= "">Reverse The Array</a>                                                     |      |
 | <a href= "">Remove Duplicates from the Array</a>                                      |      |
 | <a href= "">Move All the Zeros To the end of the Array the Array</a>                  |      |
+| <a href= "">Left Rotate Array By 1 place</a>                                          |      |
+| <a href= "">Left Rotate Array By D place</a>                                          |      |
+| <a href= "">Leaders In Array</a>                                                      |      |
+| <a href= "">Maximum Difference Problem</a>                                            |      |
+| <a href= "">Frequencies In sorted Array</a>                                           |      |
+| <a href= "">Smallest Positive Missing Number</a>                                      |      |
+| <a href= "">Rearrange Array Alternately in Min Max Form</a>                           |      |
+| <a href= "">Rearrange an Array</a>                                                    |      |
+| <a href= "">Check if an Array is Sorted and Rotated</a>                               |      |
+| <a href= "">Maximum Index</a>                                                         |      |
+| <a href= "">Stock Buy and Sell - 1</a>                                                |      |
+| <a href= "">Stock Buy and Sell - 2</a>                                                |      |
+| <a href= "">Trapping RainWater</a>                                                    |      |
+| <a href= "">Count 1s in a Sorted Array</a>                                            |      |
+| <a href= "">Print All Subarrays</a>                                                   |      |
+| <a href= "">Print All Subsequences</a>                                                |      |
+| <a href= "">Maximum Subarray Sum</a>                                                  |      |
+| <a href= "">Print Maximum Subarray Sum</a>                                            |      |
+| <a href= "">Longest Even Odd Subarray</a>                                             |      |
+| <a href= "">Print Longest Even Odd Subarray</a>                                       |      |
+| <a href= "">Maximum Circular Subarray Sum</a>                                         |      |
+| <a href= "">Maximum Length Biotonic Subarray</a>                                      |      |
+| <a href= "">Majority Element - 1</a>                                                  |      |
+| <a href= "">Majority Element - 2</a>                                                  |      |
+| <a href= "">More Than n/k Occurences</a>                                              |      |
+| <a href= "">Minimum Consecutive Flips</a>                                             |      |
+| <a href= "">Maximum Sum of K Consecutive Elements</a>                                 |      |
+| <a href= "">Find Subarray of Given Sum</a>                                            |      |
+| <a href= "">N-bonacci Numbers</a>                                                     |      |
+| <a href= "">Prefix Sum</a>                                                            |      |
+| <a href= "">Find Equilibrium Point</a>                                                |      |
+| <a href= "">Maximum Occuring Element</a>                                              |      |
+| <a href= "">Split Array in 3 equal parts</a>                                          |      |
 
 </details>
 
+<h3>Searching</h3>
+
+<details>
+| Topics / Questions                                                                    | Code |
+| ------------------------------------------------------------------------------------- | ---- |
+| <a href= "">Linear Search</a>                                                         |      |
+| <a href= "">Binary Search - Recursive</a>                                             |      |
+| <a href= "">Binary Search - Iterative</a>                                             |      |
+| <a href= "">First Index Of Number - Recursive</a>                                     |      |
+
+</details>
 ## Algorithms
 
 An algorithm is a set of instructions that are used to accomplish a task, such as finding the largest number in a list, removing all the red cards from a deck of playing cards, sorting a collection of names, figuring out an average movie rating from just your friend's opinion
