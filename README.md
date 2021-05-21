@@ -179,6 +179,7 @@ Data structure is a way or a format how your data is stored in memory for effeci
 | <a href= "">Last Index Of Number - Iterative</a>                                     |      |
 
 </details>
+
 ## Algorithms
 
 An algorithm is a set of instructions that are used to accomplish a task, such as finding the largest number in a list, removing all the red cards from a deck of playing cards, sorting a collection of names, figuring out an average movie rating from just your friend's opinion
