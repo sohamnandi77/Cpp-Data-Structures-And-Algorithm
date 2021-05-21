@@ -20,6 +20,8 @@ Data structures & Algorithms are an essential part of programming. It comes unde
 
 **Note: I tried to provide the brute force and optimize soluton for each question. If you feel to optimized any solution futher or give some suggestion, Pull requests are always welcome.**
 
+**Sorry Links Have not been updated yet!**
+
 ## Basic Concepts
 
 <h3>Pointers</h3>
@@ -168,15 +170,16 @@ Data structure is a way or a format how your data is stored in memory for effeci
 <h3>Searching</h3>
 
 <details>
-| Topics / Questions                                                                    | Code |
-| ------------------------------------------------------------------------------------- | ---- |
-| <a href= "">Linear Search</a>                                                         |      |
-| <a href= "">Binary Search - Recursive</a>                                             |      |
-| <a href= "">Binary Search - Iterative</a>                                             |      |
-| <a href= "">First Index Of Number - Recursive</a>                                     |      |
-| <a href= "">First Index Of Number - Iterative</a>                                     |      |
-| <a href= "">Last Index Of Number - Recursive</a>                                     |      |
-| <a href= "">Last Index Of Number - Iterative</a>                                     |      |
+
+| Topics / Questions                                | Code |
+| ------------------------------------------------- | ---- |
+| <a href= "">Linear Search</a>                     |      |
+| <a href= "">Binary Search - Recursive</a>         |      |
+| <a href= "">Binary Search - Iterative</a>         |      |
+| <a href= "">First Index Of Number - Recursive</a> |      |
+| <a href= "">First Index Of Number - Iterative</a> |      |
+| <a href= "">Last Index Of Number - Recursive</a>  |      |
+| <a href= "">Last Index Of Number - Iterative</a>  |      |
 
 </details>
 
