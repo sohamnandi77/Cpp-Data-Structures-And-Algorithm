@@ -31,7 +31,7 @@ Triplet gcdExtendedEuclid(int a, int b)
     Triplet smallAns = gcdExtendedEuclid(b, a % b);
     Triplet myAns;
     myAns.gcd = smallAns.gcd;
-    myAns.x = smallAns.y;
+    myAns.x = smallAns.y; // * aka Multiplicative Modulo Inverse
     myAns.y = smallAns.x - (a / b) * (smallAns.y);
     return myAns;
 }
