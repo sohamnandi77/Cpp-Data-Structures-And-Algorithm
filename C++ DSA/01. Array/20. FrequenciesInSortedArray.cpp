@@ -20,9 +20,7 @@ void printFreq(int arr[], int n)
 
     // * To print if Extreme last element is different
     if (n == 1 || arr[n - 1] != arr[n - 2])
-    {
         cout << arr[n - 1] << " " << 1 << endl;
-    }
 }
 
 int main()

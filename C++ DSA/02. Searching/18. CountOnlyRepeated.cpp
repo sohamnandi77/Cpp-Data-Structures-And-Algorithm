@@ -6,6 +6,7 @@
 using namespace std;
 
 pair<int, int> findRepeating(int *arr, int n)
+// # Time Complexity: O(logn)
 {
     pair<int, int> p;
     p.first = -1;

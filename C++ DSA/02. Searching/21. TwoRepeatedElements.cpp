@@ -4,37 +4,42 @@
 #include <vector>
 using namespace std;
 
-vector<int> twoRepeated(int arr[], int N)
+vector<int> twoRepeated(int arr[], int n)
+// # Time Complexity: O(n)
 {
-    // Your code here
     vector<int> p;
-    int x = 0, y = 0, temp;
-    for (int i = 0; i < N + 2; i++)
+    for (int i = 0; i < n; i++)
     {
-        temp = abs(arr[i]);
-        if (arr[temp] < 0)
-        {
-            if (x == 0)
-                x = temp;
-            else
-                y = temp;
-        }
+        if (arr[abs(arr[i])] < 0)
+            p.push_back(abs(arr[i]));
         else
-            arr[temp] = -arr[temp];
+            arr[abs(arr[i])] = -arr[abs(arr[i])];
     }
-    p.push_back(x);
-    p.push_back(y);
+    return p;
+}
+
+vector<int> twoRepeatedOP(int *arr, int n)
+// # Time Complexity: O(n)
+{
+    vector<int> p;
+    for (int i = 0; i < n; i++)
+    {
+        arr[((arr[i] % n) - 1)] += n;
+        if (arr[((arr[i] % n) - 1)] / n == 2)
+            p.push_back(((arr[i] % n) - 1) + 1);
+    }
     return p;
 }
 
 int main()
 {
-    int arr[] = {0, 1, 2, 7, 4, 6, 5, 7, 3}, n = 9;
-
-    cout << "Space Solution" << endl;
-
+    int arr[] = {1, 2, 1, 3, 4, 3};
+    int n = *(&arr + 1) - arr;
     vector<int> res = twoRepeated(arr, n);
-    for (int x : arr)
-        cout << x << endl;
+    for (int x : res)
+        cout << x << " ";
+    // vector<int> res = twoRepeatedOP(arr, n);
+    // for (int x : res)
+    //     cout << x << " ";
     return 0;
 }
