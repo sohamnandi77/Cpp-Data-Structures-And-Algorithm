@@ -36,22 +36,6 @@ void mergeArrayNoob(int arr1[], int arr2[], int n, int m) // * Complexity -> O(n
     }
 }
 
-void mergeArrayBetter(int arr1[], int arr2[], int n, int m) // * Complexity -> O((n+m)*log(max(n+m)))
-{
-    int f = n - 1;
-    int l = 0;
-    while (f >= 0 && l < m)
-    {
-        if (arr1[f] >= arr2[l])
-            swap(arr1[f], arr2[l]);
-        f--;
-        l++;
-    }
-
-    sort(arr1, arr1 + n);
-    sort(arr2, arr2 + m);
-}
-
 // Function to find next gap.
 int nextGap(int gap)
 {
@@ -60,7 +44,7 @@ int nextGap(int gap)
     return (gap / 2) + (gap % 2);
 }
 
-void mergeArrayMoreBetter(int *arr1, int *arr2, int n, int m) // * Complexity -> O((n+m)*log(n+m))
+void mergeArrayBetter(int *arr1, int *arr2, int n, int m) // * Complexity -> O((n+m)*log(n+m))
 {
     int i, j, gap = n + m;
     for (gap = nextGap(gap); gap > 0; gap = nextGap(gap))
@@ -165,7 +149,6 @@ int main()
 
     mergeArrayNoob(arr1, arr2, n1, n2);
     mergeArrayBetter(arr1, arr2, n1, n2);
-    mergeArrayMoreBetter(arr1, arr2, n1, n2);
     mergeArrayOP(arr1, arr2, n1, n2);
 
     cout << "Array after merging" << endl;

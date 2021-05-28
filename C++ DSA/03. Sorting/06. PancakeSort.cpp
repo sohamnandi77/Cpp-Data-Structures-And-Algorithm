@@ -9,13 +9,7 @@ void flip(int arr[], int i)
 {
     int temp, start = 0;
     while (start < i)
-    {
-        temp = arr[start];
-        arr[start] = arr[i];
-        arr[i] = temp;
-        start++;
-        i--;
-    }
+        swap(arr[i--], arr[start++]);
 }
 
 // Returns index of the maximum element in arr[0..n-1]

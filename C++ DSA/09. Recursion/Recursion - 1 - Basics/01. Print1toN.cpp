@@ -5,9 +5,8 @@ void print1toN(int n)
 {
     // Base Condition
     if (n == 0)
-    {
         return;
-    }
+
     // Recursive call
     print1toN(n - 1);
     cout << n << endl;

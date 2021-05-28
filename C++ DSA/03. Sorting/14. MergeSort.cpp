@@ -8,7 +8,6 @@ using namespace std;
 
 void merge(int arr[], int l, int m, int h)
 {
-
     // * Setting Up auxiliary arrays
     int n1 = m - l + 1, n2 = h - m;
 

@@ -1,17 +1,17 @@
 #include <iostream>
 using namespace std;
+
+// Here we are Traversing the array from right to left.
 int last_index(int a[], int size, int ele)
 {
     // Base case
     if (size <= 0)
-    {
         return -1;
-    }
+
     // small calculations
     if (a[size] == ele)
-    {
         return size;
-    }
+
     // Recursive call
     return last_index(a, size - 1, ele);
 }

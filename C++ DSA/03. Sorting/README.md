@@ -5,6 +5,7 @@
 |                       Cases                       |            Algorithm            |
 | :-----------------------------------------------: | :-----------------------------: |
 |       Binary Array or Array with two types        | Hoare's Partition of Quick Sort |
+|              Array with three types               |            DNF Sort             |
 |      Array of size n and small ranged values      |           Count Sort            |
 |  Array of size n and range is of size n^2 or n^3  |           Radix Sort            |
 | Array of Uniformily Distributed Data over a Range |           Bucket Sort           |

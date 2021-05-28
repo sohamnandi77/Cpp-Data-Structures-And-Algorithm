@@ -7,15 +7,16 @@ int allIndices(int *arr, int size, int x, int *arr2)
         return 0;
 
     // Recursive Call
+    // Here it will traverse from right to left
     int OutputSize = allIndices(arr, size - 1, x, arr2);
 
     // A small Calculation
 
-    // shift the output array by 1 and add 1 to array values
+    // indirectly it will traverse from left to right
+    // update last element as size -1
     if (arr[size - 1] == x)
     {
         arr2[OutputSize] = size - 1;
-
         OutputSize++;
     }
 

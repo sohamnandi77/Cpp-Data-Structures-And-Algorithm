@@ -7,19 +7,17 @@ void removeX(char *str)
         return;
 
     if (str[0] != 'x')
-    {
         removeX(str + 1);
-    }
     else
     {
         int i = 1;
         for (; str[i] != '\0'; i++)
-        {
             str[i - 1] = str[i];
-        }
         // for null character
         str[i - 1] = str[i];
-        removeX(str); // we have reduce the length of the string
+        // we will call recurion on the same string
+        // we have reduce the length of the string
+        removeX(str);
     }
 }
 int main()

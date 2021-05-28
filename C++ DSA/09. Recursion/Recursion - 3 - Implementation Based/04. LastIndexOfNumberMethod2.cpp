@@ -7,9 +7,7 @@ int LastIndex(int *arr, int size, int x)
 {
     // Base Case
     if (size == 0)
-    {
         return -1;
-    }
 
     // Recursion
     int ans = LastIndex(arr + 1, size - 1, x);
@@ -17,6 +15,7 @@ int LastIndex(int *arr, int size, int x)
     // A bit calculation part
     if (ans != -1)
         return ans + 1;
+
     if (arr[0] == x)
         return 0;
 

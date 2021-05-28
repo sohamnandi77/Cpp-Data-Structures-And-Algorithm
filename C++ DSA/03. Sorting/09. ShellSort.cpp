@@ -10,11 +10,10 @@ int shellSort(int arr[], int n)
     {
         // Do a gapped insertion sort for this gap size.
         // The first gap elements a[0..gap-1] are already in gapped order
-        // keep adding one more element until the entire array is
-        // gap sorted
-        for (int i = gap; i < n; i += 1)
+        // keep adding one more element until the entire array is gap sorted
+        for (int i = gap; i < n; i++)
         {
-            // add a[i] to the elements that have been gap sorted
+            // add a[i ] to the elements that have been gap sorted
             // save a[i] in temp and make a hole at position i
             int temp = arr[i];
 

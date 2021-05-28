@@ -48,6 +48,19 @@ void SegregateOP(int *arr, int n)
     }
 }
 
+void binSort(int arr[], int n)
+{
+    int l = -1;
+    for (int i = 0; i < n; i++)
+    {
+        if (arr[i] == 0)
+        {
+            l++;
+            swap(arr[l], arr[i]);
+        }
+    }
+}
+
 int main()
 {
     int arr[] = {13, -12, 18, -10};

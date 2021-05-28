@@ -13,9 +13,7 @@ void BubbleSort(int arr[], int n)
 
     bool sorted = true;
 
-    // One pass of bubble sort. After
-    // this pass, the largest element
-    // is moved (or bubbled) to end.
+    // One pass of bubble sort. After this pass, the largest element is moved (or bubbled) to end.
     for (int i = 0; i < n - 1; i++)
         if (arr[i] > arr[i + 1])
         {

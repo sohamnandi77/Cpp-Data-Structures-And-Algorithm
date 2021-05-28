@@ -8,16 +8,15 @@ using namespace std;
 
 void cycleSort(int *arr, int n)
 {
-    int count = 0;
+    int ans = 0;
     for (int cs = 0; cs < n - 1; cs++)
     {
+        int cycle_size = 0;
         int item = arr[cs];
         int pos = cs;
         for (int i = cs + 1; i < n; i++)
-        {
             if (arr[i] < item)
                 pos++;
-        }
 
         // If item is already in correct position
         if (pos == cs)
@@ -31,7 +30,7 @@ void cycleSort(int *arr, int n)
         if (pos != cs)
         {
             swap(item, arr[pos]);
-            count++;
+            // cycle_size++;
         }
         while (pos != cs)
         {
@@ -47,16 +46,18 @@ void cycleSort(int *arr, int n)
             if (item != arr[pos])
             {
                 swap(item, arr[pos]);
-                count++;
+                cycle_size++;
             }
         }
+        if (cycle_size > 0)
+            ans += (cycle_size - 1);
     }
-    cout << count << endl;
+    cout << ans << endl;
 }
 
 int main()
 {
-    int arr[] = {1, 4, 2, 3, 5};
+    int arr[] = {20, 40, 50, 10, 30};
     int n = *(&arr + 1) - arr;
 
     cycleSort(arr, n);

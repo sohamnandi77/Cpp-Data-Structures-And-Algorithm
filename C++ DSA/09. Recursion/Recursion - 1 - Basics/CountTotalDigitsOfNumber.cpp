@@ -12,4 +12,3 @@ int main()
     cout << countDigit(9999) << endl;
     return 0;
 }
-0

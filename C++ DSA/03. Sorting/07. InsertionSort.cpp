@@ -8,7 +8,7 @@ using namespace std;
 //* Insert an element from unsorted array to its correct position in sorted array
 void InsertionSort(int arr[], int n)
 {
-    for (int i = 1; i < n - 1; i++)
+    for (int i = 1; i < n; i++)
     {
         int key = arr[i];
         int j = i - 1;

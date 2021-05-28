@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 using namespace std;
 
 bool checkPrime(int n)
@@ -25,20 +26,21 @@ int countPrimeNoob(int n)
 int countPrimeOP(int n)
 {
     int count = 0;
-    bool *arr = new bool[n + 1]{false};
-    // for (int i = 0; i <= n; i++)
-    //     arr[i] = true;
-    arr[0] = true;
-    arr[1] = true;
-    for (int i = 2; i * i <= n; i++)
-        if (arr[i] == false)
+    vector<bool> arr((n + 1), true);
+
+    // Special Cases
+    arr[0] = false;
+    arr[1] = false;
+    arr[2] = true;
+
+    for (int i = 3; i * i <= n; i += 2)
+        if (arr[i] == true)
             for (int j = i * i; j <= n; j += i)
-                arr[j] = true;
+                arr[j] = false;
     for (int i = 0; i <= n; i++)
         // cout << i << " : " << arr[i] << endl;
-        if (arr[i] == false)
+        if (arr[i])
             count++;
-    delete[] arr;
     return count;
 }
 

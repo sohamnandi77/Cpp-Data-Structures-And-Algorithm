@@ -6,9 +6,7 @@ bool isLucky(int n, int &counter)
     {
 
         if (n % counter == 0)
-        {
             return false;
-        }
         n = n - n / counter;
         counter++;
         return isLucky(n, counter);
