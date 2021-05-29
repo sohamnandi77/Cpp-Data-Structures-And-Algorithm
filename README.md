@@ -44,8 +44,8 @@ Data structures & Algorithms are an essential part of programming. It comes unde
 <details>
 
 | Topics                                                                                                                                                                                          |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- |
-| <a href= "https://github.com/sohamnandi77/Cpp-Data-Structures-And-Algorithm/blob/master/C%2B%2B%20Basic%20Concepts/2.%20Reference%20Variable/1.%20ReferenceVariable.cpp">Reference variable</a> |     |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <a href= "https://github.com/sohamnandi77/Cpp-Data-Structures-And-Algorithm/blob/master/C%2B%2B%20Basic%20Concepts/2.%20Reference%20Variable/1.%20ReferenceVariable.cpp">Reference variable</a> |
 | <a href= "https://github.com/sohamnandi77/Cpp-Data-Structures-And-Algorithm/blob/master/C%2B%2B%20Basic%20Concepts/2.%20Reference%20Variable/1.%20ReferenceVariable.cpp">Pass By Reference</a>  |
 
 </details>
