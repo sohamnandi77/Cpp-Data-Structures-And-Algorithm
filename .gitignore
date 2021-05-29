@@ -1,4 +1,5 @@
 .vscode/
 *.py
 try/
+**/Basics/
 *.exe
