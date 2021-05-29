@@ -27,46 +27,45 @@ Data structure is a way or a format how your data is stored in memory for effeci
 
 <details>
 
-| Topics / Questions                                                             | Code / Comments |
-| ------------------------------------------------------------------------------ | --------------- |
-| Check if the Array is Sorted either in strictly Increasing or decreasing order |                 |
-| Reverse The Array                                                              |                 |
-| Remove Duplicates from the Array                                               |                 |
-| Move All the Zeros To the end of the Array the Array                           |                 |
-| Left Rotate Array By 1 place                                                   |                 |
-| Left Rotate Array By D place                                                   |                 |
-| Leaders In Array                                                               |                 |
-| Maximum Difference Problem                                                     |                 |
-| Maximum Difference Problem                                                     |                 |
-| Frequencies In sorted Array                                                    |                 |
-| Smallest Positive Missing Number                                               |                 |
-| Rearrange Array Alternately in Min Max Form                                    |                 |
-| Rearrange an Array                                                             |                 |
-| Check if an Array is Sorted and Rotated                                        |                 |
-| Maximum Index                                                                  |                 |
-| Stock Buy and Sell - 1                                                         |                 |
-| Stock Buy and Sell - 2                                                         |                 |
-| Trapping RainWater                                                             |                 |
-| Count 1s in a Sorted Array                                                     |                 |
-| Print All Subarrays                                                            |                 |
-| Print All Subsequences                                                         |                 |
-| Maximum Subarray Sum                                                           |                 |
-| Print Maximum Subarray Sum                                                     |                 |
-| Longest Even Odd Subarray                                                      |                 |
-| Print Longest Even Odd Subarray                                                |                 |
-| Maximum Circular Subarray Sum                                                  |                 |
-| Maximum Length Biotonic Subarray                                               |                 |
-| Majority Element - 1                                                           |                 |
-| Majority Element - 2                                                           |                 |
-| More Than n/k Occurences                                                       |                 |
-| Minimum Consecutive Flips                                                      |                 |
-| Maximum Sum of K Consecutive Elements                                          |                 |
-| Find Subarray of Given Sum                                                     |                 |
-| N-bonacci Numbers                                                              |                 |
-| Prefix Sum                                                                     |                 |
-| Find Equilibrium Point                                                         |                 |
-| Maximum Occuring Element                                                       |                 |
-| Split Array in 3 equal parts                                                   |                 |
+| Topics / Questions                                                             | Code / Comments                           |
+| ------------------------------------------------------------------------------ | ----------------------------------------- |
+| Check if the Array is Sorted either in strictly Increasing or decreasing order | [O(n) Solution](Array/01.%20IsSorted.cpp) |
+| Reverse The Array                                                              |                                           |
+| Left Rotate Array By 1 place                                                   |                                           |
+| Left Rotate Array By D place                                                   |                                           |
+| Remove Duplicates from the Array                                               |                                           |
+| Move All the Zeros To the end of the Array                                     |                                           |
+| Leaders In Array                                                               |                                           |
+| Maximum Difference Problem                                                     |                                           |
+| Frequencies In sorted Array                                                    |                                           |
+| Smallest Positive Missing Number                                               |                                           |
+| Rearrange Array Alternately in Min Max Form                                    |                                           |
+| Rearrange an Array                                                             |                                           |
+| Check if an Array is Sorted and Rotated                                        |                                           |
+| Maximum Index                                                                  |                                           |
+| Stock Buy and Sell - 1                                                         |                                           |
+| Stock Buy and Sell - 2                                                         |                                           |
+| Trapping RainWater                                                             |                                           |
+| Count 1s in a Sorted Array                                                     |                                           |
+| Print All Subarrays                                                            |                                           |
+| Print All Subsequences                                                         |                                           |
+| Maximum Subarray Sum                                                           |                                           |
+| Print Maximum Subarray Sum                                                     |                                           |
+| Longest Even Odd Subarray                                                      |                                           |
+| Print Longest Even Odd Subarray                                                |                                           |
+| Maximum Circular Subarray Sum                                                  |                                           |
+| Maximum Length Biotonic Subarray                                               |                                           |
+| Majority Element - 1                                                           |                                           |
+| Majority Element - 2                                                           |                                           |
+| More Than n/k Occurences                                                       |                                           |
+| Minimum Consecutive Flips                                                      |                                           |
+| Maximum Sum of K Consecutive Elements                                          |                                           |
+| Find Subarray of Given Sum                                                     |                                           |
+| N-bonacci Numbers                                                              |                                           |
+| Prefix Sum                                                                     |                                           |
+| Find Equilibrium Point                                                         |                                           |
+| Maximum Occuring Element                                                       |                                           |
+| Split Array in 3 equal parts                                                   |                                           |
 
 </details>
 
