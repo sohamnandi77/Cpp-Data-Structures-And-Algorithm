@@ -18,9 +18,8 @@ void print1toN(int n, int k)
 {
     // Base Condition
     if (n == 0)
-    {
         return;
-    }
+
     // Recursive call
     cout << k << endl;
     print1toN(n - 1, k + 1);

@@ -12,13 +12,9 @@ int main()
 {
     string str = "abbba";
     if (isPalindrome(str, 0, str.length() - 1) == 1)
-    {
         cout << "Palindrome" << endl;
-    }
     else
-    {
         cout << "Not Palindrome" << endl;
-    }
 
     return 0;
 }

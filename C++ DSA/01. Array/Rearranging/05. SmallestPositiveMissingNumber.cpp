@@ -73,7 +73,6 @@ int segregateArr(int arr[], int n)
 //Finding the smallest positive missing number in an array that contains only positive integers.
 int findMissingPositive(int arr[], int n)
 {
-
     //marking arr[i] as visited by making arr[arr[i]-1] negative.
     //note that 1 is subtracted because indexing starts from 0 and
     //positive numbers start from 1.

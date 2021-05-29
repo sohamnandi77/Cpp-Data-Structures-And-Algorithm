@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 int len(char *str)
@@ -28,9 +29,23 @@ void RemoveDuplicates(char *s)
     else
         RemoveDuplicates(s + 1);
 }
+
+string removeDuplicates(string s)
+{
+    if (s.length() == 0)
+        return "";
+
+    char ch = s[0];
+    string ans = removeDuplicates(s.substr(1));
+    if (ch == ans[0])
+        return ans;
+    return ch + ans;
+}
+
 int main()
 {
-    char str[100] = "aabbbcdda";
+    char str[] = "aabbbcdda";
+    cout << removeDuplicates(str) << endl;
     RemoveDuplicates(str);
     cout << str << endl;
     return 0;
