@@ -1,8 +1,16 @@
 #include <iostream>
 #define ll long long
 using namespace std;
-//* OP Method
-ll int sqRootFloor(ll int x)
+
+int sqRootFloorNoob(int x)
+{
+    int i = 1;
+    while (i <= x / i)
+        i++;
+    return i - 1;
+}
+
+ll int sqRootFloorOP(ll int x)
 {
     if (x == 0 || x == 1)
         return x;
@@ -31,6 +39,7 @@ ll int sqRootFloor(ll int x)
 int main()
 {
     ll int n = 45654654;
-    cout << sqRootFloor(n) << endl;
+    cout << sqRootFloorNoob(n) << endl;
+    cout << sqRootFloorOP(n) << endl;
     return 0;
 }

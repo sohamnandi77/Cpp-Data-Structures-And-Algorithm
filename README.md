@@ -19,8 +19,6 @@ Data structures & Algorithms are an essential part of programming. It comes unde
 
 **Note: I tried to provide the brute force and optimize soluton for each question. If you feel to optimized any solution futher or give some suggestion, Pull requests are always welcome.**
 
-**Sorry Links Have not been updated yet!**
-
 ## Basic Concepts
 
 <h3>Pointers</h3>
@@ -93,6 +91,8 @@ Data structures & Algorithms are an essential part of programming. It comes unde
 | <a href= "">Static Members</a>        |      |
 
 </details> -->
+
+**Sorry Links Have not been updated yet!**
 
 ## Data Structures & Algorithms Questions
 
