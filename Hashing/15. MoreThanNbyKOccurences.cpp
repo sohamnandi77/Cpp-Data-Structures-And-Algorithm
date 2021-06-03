@@ -6,8 +6,8 @@ using namespace std;
 void printNByKNoob(int arr[], int n, int k)
 // * Time Complexity: O(nlogn)
 {
-    int min_times = n / k;
     sort(arr, arr + n);
+    int min_times = n / k;
     int i = 1, count = 1;
     while (i < n)
     {

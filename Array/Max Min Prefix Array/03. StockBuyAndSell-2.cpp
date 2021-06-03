@@ -42,12 +42,8 @@ ll maxProfitOP(ll arr[], ll n)
 {
     ll profit = 0;
     for (ll i = 1; i < n; i++)
-    {
         if (arr[i] > arr[i - 1])
-        {
             profit += arr[i] - arr[i - 1];
-        }
-    }
     return profit;
 }
 

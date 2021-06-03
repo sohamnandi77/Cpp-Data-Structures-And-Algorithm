@@ -3,6 +3,8 @@
 #include <iostream>
 using namespace std;
 int maxIndexDiff(int arr[], int n)
+// # Time Complexity: O(n)
+// # Space Complexity: O(n)
 {
 
     int *left = new int[n];
