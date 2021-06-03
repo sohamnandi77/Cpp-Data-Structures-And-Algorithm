@@ -13,6 +13,7 @@ public:
 };
 
 void DeleteAtTail(Node *&head)
+// * Time Complexity: O(n)
 {
     if (head == NULL)
         return;
@@ -23,9 +24,8 @@ void DeleteAtTail(Node *&head)
     }
     Node *temp = head;
     while (temp->next->next != NULL)
-    {
         temp = temp->next;
-    }
+
     // Delete Last Node
     delete temp->next;
 

@@ -2,7 +2,6 @@
 using namespace std;
 class Node
 {
-
 public:
     int data;
     Node *next;
@@ -53,24 +52,21 @@ bool search(Node *head, int key)
     while (temp != NULL)
     {
         if (temp->data == key)
-        {
             return true;
-        }
         temp = temp->next; // act as iterator
     }
     return false;
 }
 
 int FindIndexIterative(Node *head, int key)
+// * Time Complexity: O(n)
 {
     Node *temp = head;
     int count = 0;
     while (temp != NULL)
     {
         if (temp->data == key)
-        {
             return count;
-        }
         temp = temp->next; // act as iterator
         count++;
     }

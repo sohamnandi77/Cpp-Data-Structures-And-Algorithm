@@ -3,6 +3,7 @@
 #include <iostream>
 using namespace std;
 
+// * Noob Approach
 void moveZerosToEndNOOB(int *arr, int n)
 {
     for (int i = 0; i < n; i++)
@@ -18,6 +19,7 @@ void moveZerosToEndNOOB(int *arr, int n)
     }
 }
 
+// * OP Approach
 void moveZerosToEndOP(int *arr, int n)
 {
     int count = 0;

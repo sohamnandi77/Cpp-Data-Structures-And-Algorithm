@@ -6,6 +6,7 @@ using namespace std;
 
 vector<int> twoRepeated(int arr[], int n)
 // # Time Complexity: O(n)
+// * Scaleable but at most 2 duplicate elements
 {
     vector<int> p;
     for (int i = 0; i < n; i++)

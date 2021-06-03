@@ -21,9 +21,7 @@ void printLongestEvenOddOP(int arr[], int n)
     int startIndex = endIndex - res + 1;
 
     for (int i = startIndex; i <= endIndex; i++)
-    {
         cout << arr[i] << " ";
-    }
 }
 
 int main()

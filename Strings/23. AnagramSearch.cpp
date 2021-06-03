@@ -51,6 +51,7 @@ bool isPresentOP(string &txt, string &pat)
     {
         if (areSame(CT, CP))
             return true;
+        // * Sliding Window Technique
         CT[txt[i]]++;
         CT[txt[i - pat.length()]]--;
     }

@@ -1,35 +1,39 @@
 #include <iostream>
 using namespace std;
+
 class Node
 {
 public:
     int data;
     Node *next;
+    Node *prev;
+
     Node(int data)
     {
         this->data = data;
         next = NULL;
+        prev = NULL;
     }
 };
 
-void DeleteAtHead(Node *&head)
-{
-    if (head == NULL)
-        return;
-    Node *temp = head;
-    head = head->next;
-    delete temp;
-}
-
-void InsertAtHead(Node *&head, int val)
+Node *InsertAtBegin(Node *head, int val)
 {
     Node *NewNode = new Node(val);
+    if (head == NULL)
+    {
+        head = NewNode;
+        return head;
+    }
+
     NewNode->next = head;
+    head->prev = NewNode;
     head = NewNode;
+    return head;
 }
 
 void display(Node *head)
 {
+
     Node *temp = head;
     while (temp != NULL)
     {
@@ -42,10 +46,8 @@ void display(Node *head)
 int main()
 {
     Node *head = NULL;
-    InsertAtHead(head, 0);
-    InsertAtHead(head, 1);
-    display(head);
-    DeleteAtHead(head);
+    head = InsertAtBegin(head, 5);
+    head = InsertAtBegin(head, 6);
     display(head);
     return 0;
 }

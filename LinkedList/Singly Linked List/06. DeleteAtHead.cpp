@@ -12,6 +12,16 @@ public:
     }
 };
 
+void DeleteAtHead(Node *&head)
+// * Time Complexity: O(1)
+{
+    if (head == NULL)
+        return;
+    Node *temp = head;
+    head = head->next;
+    delete temp;
+}
+
 void InsertAtHead(Node *&head, int val)
 {
     Node *NewNode = new Node(val);
@@ -29,11 +39,14 @@ void display(Node *head)
     }
     cout << "NULL" << endl;
 }
+
 int main()
 {
     Node *head = NULL;
-    InsertAtHead(head, 5);
-    InsertAtHead(head, 6);
+    InsertAtHead(head, 0);
+    InsertAtHead(head, 1);
+    display(head);
+    DeleteAtHead(head);
     display(head);
     return 0;
 }

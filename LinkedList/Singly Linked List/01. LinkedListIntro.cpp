@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+
 class Node
 {
 public:
@@ -24,7 +25,6 @@ int main()
     cout << n1.data << "->" << n2.data << endl;
 
     // Dynamically
-
     Node *n3 = new Node(10);
     Node *head2 = n3;
     Node *n4 = new Node(20);

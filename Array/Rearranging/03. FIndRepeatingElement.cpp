@@ -44,27 +44,28 @@ int findRepeatingElementBetter(int *arr, int n)
     return slow - 1;
 }
 
-int findRepeatingElementOP(int *arr, int n)
+// int findRepeatingElementOP(int *arr, int n)
 // # Time Complexity: O(n)
 // -> Space Complexity: O(1)
 // * Can find left most first occurring duplicate
+// ! Not a valid Solution as scaleable upto 2 element
 // * Scaleable but at most 2 duplicate elements
-{
+// {
 
-    for (int i = 0; i < n; i++)
-        arr[i]++;
-    for (int i = 0; i < n; i++)
-    {
-        if (arr[abs(arr[i])] > 0)
-            arr[abs(arr[i])] = -arr[abs(arr[i])];
-        else
-        {
-            // cout << abs(arr[i]) - 1 << endl;
-            return abs(arr[i]) - 1;
-        }
-    }
-    return -1;
-}
+//     for (int i = 0; i < n; i++)
+//         arr[i]++;
+//     for (int i = 0; i < n; i++)
+//     {
+//         if (arr[abs(arr[i])] > 0)
+//             arr[abs(arr[i])] = -arr[abs(arr[i])];
+//         else
+//         {
+//             // cout << abs(arr[i]) - 1 << endl;
+//             return abs(arr[i]) - 1;
+//         }
+//     }
+//     return -1;
+// }
 
 int main()
 {

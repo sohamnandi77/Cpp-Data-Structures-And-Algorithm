@@ -2,7 +2,8 @@
 
 #include <iostream>
 using namespace std;
-// Noob Method
+
+//* Noob Method
 void leadersNoob(int arr[], int n)
 {
     for (int i = 0; i < n; i++)
@@ -22,7 +23,7 @@ void leadersNoob(int arr[], int n)
     }
 }
 
-// OP Method
+//* OP Method
 void leadersOP(int arr[], int n)
 {
     int curr_leader = arr[n - 1];

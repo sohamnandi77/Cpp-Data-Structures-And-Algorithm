@@ -25,11 +25,11 @@ void display(Node *head)
 
 void InsertNode(Node *&head, int i, int val)
 {
-    Node *NewNode = new Node(val);
-
     // if invalid i
-    if (i < 1)
+    if (i < 0)
         return;
+
+    Node *NewNode = new Node(val);
 
     // If the List is NULL
     if (i == 0)
@@ -41,20 +41,23 @@ void InsertNode(Node *&head, int i, int val)
 
     int count = 0;
     Node *temp = head;
-    while (temp != NULL && count < i - 1)
+    while (temp != NULL && count < i - 1) // stop at i-2 th node
     {
         temp = temp->next;
         count++;
     }
+
+    // if i is out of bound -> simply return the original list
+    if (temp == NULL)
+        return;
 
     // if i is not out of bound and within the length of the list
     if (temp != NULL)
     {
         NewNode->next = temp->next;
         temp->next = NewNode; //! Don't write this statement before the above statement as then we might loose the address of ith node.
+        return;
     }
-
-    // if i is out of bound -> simply return the original list
 }
 int main()
 {

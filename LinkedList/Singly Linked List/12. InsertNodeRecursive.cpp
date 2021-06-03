@@ -28,7 +28,7 @@ void InsertNode(Node *&head, int i, int val)
 {
 
     // Base Case
-    if (head == NULL)
+    if (head == NULL || i < 0)
         return;
 
     // If the List is NULL
@@ -41,8 +41,9 @@ void InsertNode(Node *&head, int i, int val)
     }
 
     // Recursive
-    head = InsertNode(head->next, i - 1, val);
+    InsertNode(head->next, i - 1, val);
 }
+
 int main()
 {
     Node *head = NULL;
