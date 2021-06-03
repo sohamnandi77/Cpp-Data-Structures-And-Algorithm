@@ -27,6 +27,7 @@ Data structure is a way or a format how your data is stored in memory for effeci
 <details>
 
 <summary style="font-size: 1.5rem; font-weight: 600">Arrays</summary>
+<br>
 
 | Topics / Questions                                                             | Code / Comments                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | ------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -80,7 +81,7 @@ Data structure is a way or a format how your data is stored in memory for effeci
 
 <details>
 <summary style="font-size: 1.5rem; font-weight: 600">Searching</summary>
-
+<br>
 | Topics / Questions                               | Code / Comments |
 | ------------------------------------------------ | --------------- |
 | Linear Search                                    |                 |
@@ -96,6 +97,7 @@ Data structure is a way or a format how your data is stored in memory for effeci
 
 <details>
 <summary style="font-size: 1.5rem; font-weight: 600"><a href="https://github.com/sohamnandi77/Cpp-Data-Structures-And-Algorithm/blob/master/Sorting/README.md">Sorting</a></summary>
+<br>
 
 | Topics / Questions | Code / Comments |
 | ------------------ | --------------- |
