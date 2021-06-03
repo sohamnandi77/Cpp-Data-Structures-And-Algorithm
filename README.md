@@ -82,6 +82,7 @@ Data structure is a way or a format how your data is stored in memory for effeci
 <details>
 <summary style="font-size: 1.5rem; font-weight: 600">Searching</summary>
 <br>
+
 | Topics / Questions                               | Code / Comments |
 | ------------------------------------------------ | --------------- |
 | Linear Search                                    |                 |
