@@ -14,11 +14,11 @@ Data structures & Algorithms are an essential part of programming. It comes unde
 
 :star2: Star it | :fork_and_knife:Fork it | :handshake: Contribute to it!
 
-**Note: I tried to provide the Brute Force and Optimized soluton for each question. If you feel to optimize any solution futher or give some suggestion, Pull Requests are always welcome.**
+**Note: If you feel to optimize any solution futher or give some suggestion, Pull Requests are always welcome.**
 
 <hr/>
 
-**Sorry Links Have not been updated yet!**
+**Sorry all links have not been updated yet!**
 
 ## Data Structures and Algorithms
 
