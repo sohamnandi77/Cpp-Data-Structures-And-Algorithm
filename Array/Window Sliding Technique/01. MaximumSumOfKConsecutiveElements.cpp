@@ -4,15 +4,14 @@
 using namespace std;
 
 int maxKsumNOOB(int *arr, int n, int k)
+// # Time Complexity: O(n^2)
 {
     int maxSum = INT_MIN;
     for (int i = 0; i + k - 1 < n; i++)
     {
         int res = 0;
         for (int j = 0; j < k; j++)
-        {
             res += arr[i + j];
-        }
         maxSum = max(maxSum, res);
     }
     return maxSum;
@@ -20,6 +19,7 @@ int maxKsumNOOB(int *arr, int n, int k)
 
 // * Window Sliding Technique
 int maxKsumOP(int *arr, int n, int k)
+// # Time Complexity: O(n)
 {
     int currSum = 0;
     for (int i = 0; i < k; i++)

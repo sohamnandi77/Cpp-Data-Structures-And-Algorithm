@@ -36,30 +36,50 @@ void display(Node *head)
     // cout << temp->data << endl;
 }
 
-Node *InsertAtBegin(Node *&head, int val)
+Node *InsertAtEndNoob(Node *&head, int val)
+// # Time Complexity: O(n)
 {
     Node *NewNode = new Node(val);
     if (head == NULL)
     {
         NewNode->next = NewNode;
-        // head = NewNode;
         return NewNode;
     }
     Node *temp = head;
     while (temp->next != head)
         temp = temp->next;
 
-    temp->next = temp;
-    temp->next = head;
-    // head = NewNode;
+    temp->next = NewNode;
+    NewNode->next = head;
+    return head;
+}
+
+Node *InsertAtEndOP(Node *&head, int val)
+// # Time Complexity: O(n)
+{
+    Node *NewNode = new Node(val);
+    if (head == NULL)
+    {
+        NewNode->next = NewNode;
+        return NewNode;
+    }
+
+    // Insert teh node after the First Node
+    NewNode->next = head->next;
+    head->next = NewNode;
+    int temp = head->data;
+    head->data = NewNode->data;
+    NewNode->data = temp;
     return NewNode;
 }
 
 int main()
 {
     Node *head = NULL;
-    InsertAtBegin(head, 2);
-    InsertAtBegin(head, 1);
+    head = InsertAtEndNoob(head, 1);
+    head = InsertAtEndNoob(head, 2);
+    head = InsertAtEndOP(head, 3);
+    head = InsertAtEndOP(head, 4);
     display(head);
     return 0;
 }
