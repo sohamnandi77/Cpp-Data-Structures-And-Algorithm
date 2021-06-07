@@ -2,6 +2,14 @@
 #include <stack>
 using namespace std;
 
+// # Application of stack
+// -> Function calls
+// -> Reversing items
+// -> Infix to Prefix/Postfix
+// -> Evaluation of Postfix/Prefix
+// -> Stock Span problem
+// -> Undo/Redo or Forward/Backward
+
 int main()
 {
     stack<int> s;

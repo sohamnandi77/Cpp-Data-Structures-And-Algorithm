@@ -2,6 +2,13 @@
 #include <queue>
 using namespace std;
 
+// # Application of Queue
+// -> Single Resource and Multiple Consumers
+// -> Synchronization between slow and fast devices
+// -> In Operating System (Semaphores, FCFS Sheduling,Spooling, buffers for devices like Keyboard)
+// -> In computer Networks (Routers/Switches and mail Queues)
+// -> Variations: Deque, Priority Queue(Heap),Doubly Ended Priority Queue
+
 int main()
 {
     queue<int> q;

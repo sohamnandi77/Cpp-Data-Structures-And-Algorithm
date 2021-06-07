@@ -16,7 +16,7 @@ bool BalancedParenthesis(string str)
             continue;
         }
 
-        // IF current current character is not opening bracket, then it must be closing. So stack cannot be empty at this point.
+        // If current current character is not opening bracket, then it must be closing. So stack cannot be empty at this point.
 
         if (s.empty())
             return false;

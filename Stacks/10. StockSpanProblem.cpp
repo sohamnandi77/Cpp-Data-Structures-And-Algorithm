@@ -4,48 +4,40 @@
 #include <algorithm>
 using namespace std;
 
-void nslNoob(int *arr, int n)
+void stockSpanNoob(int *arr, int n)
 {
-
-    cout << -1 << " ";
-    for (int i = 1; i < n; i++)
+    for (int i = 0; i < n; i++)
     {
-        bool flag = true;
-        for (int j = i - 1; j >= 0; j--)
-            if (arr[j] < arr[i])
-            {
-                cout << arr[j] << " ";
-                flag = false;
-                break;
-            }
-        if (flag)
-            cout << -1 << " ";
+        int span = 1;
+        for (int j = i - 1; j >= 0 && arr[j] <= arr[i]; j--)
+            span++;
+        cout << span << " ";
     }
 }
 
-vector<int> nslOP(int *arr, int n)
+vector<int> stockSpanOP(int *arr, int n)
 {
-    stack<int> s;
+    stack<pair<int, int>> s;
     vector<int> res;
     for (int i = 0; i < n; i++)
     {
         if (s.empty())
-            res.push_back(-1);
+            res.push_back(i - (-1));
 
-        else if (!s.empty() && s.top() < arr[i])
-            res.push_back(s.top());
+        else if (!s.empty() && s.top().first > arr[i])
+            res.push_back(i - s.top().second);
 
-        else if (!s.empty() && s.top() >= arr[i])
+        else if (!s.empty() && s.top().first <= arr[i])
         {
-            while (!s.empty() && s.top() >= arr[i])
+            while (!s.empty() && s.top().first <= arr[i])
                 s.pop();
             if (s.empty())
-                res.push_back(-1);
+                res.push_back(i - (-1));
             else
-                res.push_back(s.top());
+                res.push_back(i - s.top().second);
         }
 
-        s.push(arr[i]);
+        s.push(make_pair(arr[i], i));
     }
 
     return res;
@@ -53,11 +45,11 @@ vector<int> nslOP(int *arr, int n)
 
 int main()
 {
-    int arr[] = {1, 3, 0, 0, 1, 2, 4, 8};
+    int arr[] = {100, 80, 60, 70, 60, 75, 85};
     int size = *(&arr + 1) - arr;
-    nslNoob(arr, size);
+    stockSpanNoob(arr, size);
     cout << endl;
-    vector<int> res = nslOP(arr, size);
+    vector<int> res = stockSpanOP(arr, size);
     for (auto x : res)
         cout << x << " ";
 

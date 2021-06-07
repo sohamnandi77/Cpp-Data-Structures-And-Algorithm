@@ -53,7 +53,7 @@ vector<int> nsrOP(int *arr, int n)
 
 int main()
 {
-    int arr[] = {1, 3, 0, 0, 1, 2, 4, 8};
+    int arr[] = {1, 9, 0, 0, 1, 12, 3, 8};
     int size = *(&arr + 1) - arr;
     nsrNoob(arr, size);
     cout << endl;

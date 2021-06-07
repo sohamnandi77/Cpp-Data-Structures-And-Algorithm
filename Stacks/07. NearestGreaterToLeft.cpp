@@ -48,13 +48,12 @@ vector<int> nglOP(int *arr, int n)
         s.push(arr[i]);
     }
 
-    reverse(res.begin(), res.end());
     return res;
 }
 
 int main()
 {
-    int arr[] = {1, 3, 0, 0, 1, 2, 4, 8};
+    int arr[] = {1, 9, 0, 0, 1, 2, 4, 8};
     int size = *(&arr + 1) - arr;
     nglNoob(arr, size);
     cout << endl;

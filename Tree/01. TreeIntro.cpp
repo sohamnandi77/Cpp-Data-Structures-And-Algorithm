@@ -22,20 +22,17 @@ TreeNode<int> *takeInput()
 
 void printTree(TreeNode<int> *root)
 {
-    // Not a base case but a edge case
+    // ? Not a base case but a edge case
     if (root == NULL)
         return;
 
-    cout << root->data << ":";
+    cout << root->data << ":"; // * here it is working as a base case
     for (int i = 0; i < root->children.size(); i++)
-    {
         cout << root->children[i]->data << ",";
-    }
+
     cout << endl;
     for (int i = 0; i < root->children.size(); i++)
-    {
         printTree(root->children[i]);
-    }
 }
 int main()
 {
