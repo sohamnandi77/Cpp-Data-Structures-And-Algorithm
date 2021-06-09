@@ -6,7 +6,7 @@ using namespace std;
 
 pq kLargest(int *arr, int n, int k)
 {
-    // Max Heap
+    // Min Heap
     pq minh;
     for (int i = 0; i < n; i++)
     {

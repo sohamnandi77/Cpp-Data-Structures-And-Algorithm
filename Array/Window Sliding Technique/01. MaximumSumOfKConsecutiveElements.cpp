@@ -23,9 +23,7 @@ int maxKsumOP(int *arr, int n, int k)
 {
     int currSum = 0;
     for (int i = 0; i < k; i++)
-    {
         currSum += arr[i];
-    }
     int maxSum = currSum;
     for (int i = k; i < n; i++)
     {

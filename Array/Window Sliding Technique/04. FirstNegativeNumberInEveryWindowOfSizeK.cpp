@@ -1,4 +1,5 @@
 #include <iostream>
+#include <queue>
 using namespace std;
 
 void FirstNegativeNumberNoob(int *arr, int n, int k)
@@ -18,10 +19,42 @@ void FirstNegativeNumberNoob(int *arr, int n, int k)
         if (!flag)
             cout << 0 << " ";
     }
+
+    return;
 }
 
-void FirstNegativeNumberOP(int *arr, int n)
+void FirstNegativeNumberOP(int *arr, int n, int k)
 {
+    queue<int> q;
+
+    int j = 0;
+    int i = 0;
+    while (j < n && i < n)
+    {
+        // Calculations
+        if (arr[j] < 0)
+            q.push(arr[j]);
+
+        if (j - i + 1 < k)
+            j++;
+
+        else if (j - i + 1 == k)
+        {
+            // Calculating Answer
+            if (q.empty())
+                cout << 0 << " ";
+            else
+                cout << q.front() << " ";
+
+            // Slide the Window
+            if (arr[i] == q.front())
+                q.pop();
+
+            i++;
+            j++;
+        }
+    }
+    return;
 }
 
 int main()
