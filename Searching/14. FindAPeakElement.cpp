@@ -1,15 +1,15 @@
 #include <iostream>
-#define ll long long
 using namespace std;
 
-ll getPeak(ll arr[], ll n)
+int getPeak(int arr[], int n)
 {
-    ll low = 0, high = n - 1;
+    int low = 0, high = n - 1;
     while (low <= high)
     {
-        ll mid = high + (low - high) / 2;
+        int mid = low + (high - low) / 2;
         if ((mid == 0 || arr[mid - 1] <= arr[mid]) && (mid == n - 1 || arr[mid + 1] <= arr[mid]))
             return mid;
+
         if (mid > 0 && arr[mid - 1] >= arr[mid])
             high = mid - 1;
         else
@@ -20,7 +20,7 @@ ll getPeak(ll arr[], ll n)
 
 int main()
 {
-    ll arr[] = {5, 20, 40, 30, 20, 50, 60}, n = 7;
+    int arr[] = {5, 20, 40, 30, 20, 50, 60}, n = 7;
     cout << getPeak(arr, n) << endl;
     return 0;
 }

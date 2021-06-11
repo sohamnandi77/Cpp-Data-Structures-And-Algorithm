@@ -7,12 +7,18 @@ using namespace std;
 ll search(ll arr[], ll n, ll x)
 {
 
-    ll low = 0, high = n - 1;
+    ll low = 0, high = n - 1, res = -1;
     while (low <= high)
     {
-        ll mid = (low + high) / 2;
+        ll mid = low + ((high - low) / 2);
+
         if (arr[mid] == x)
-            return mid;
+        {
+            if (mid == 0 || arr[mid - 1] != arr[mid])
+                return mid;
+            else
+                high = mid - 1;
+        }
 
         //* Left Half Sorted
         if (arr[low] < arr[mid])
@@ -36,7 +42,8 @@ ll search(ll arr[], ll n, ll x)
 }
 int main()
 {
-    ll arr[] = {10, 20, 40, 60, 5, 8}, n = 6;
+    ll arr[] = {10, 20, 40, 60, 5, 5, 8};
+    ll n = *(&arr + 1) - arr;
     ll x = 5;
 
     cout << search(arr, n, x);

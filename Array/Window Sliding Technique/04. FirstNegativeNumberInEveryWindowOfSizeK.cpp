@@ -3,6 +3,7 @@
 using namespace std;
 
 void FirstNegativeNumberNoob(int *arr, int n, int k)
+// # Time Complexity: O(n^2)
 {
     for (int i = 0; i <= n - k; i++)
     {
@@ -24,6 +25,7 @@ void FirstNegativeNumberNoob(int *arr, int n, int k)
 }
 
 void FirstNegativeNumberOP(int *arr, int n, int k)
+// # Time Complexity: O(n)
 {
     queue<int> q;
 
