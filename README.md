@@ -26,7 +26,7 @@ Data structure is a way or a format how your data is stored in memory for effeci
 
 <details>
 
-<summary style="font-size: 1.5rem; font-weight: 600">Arrays</summary>
+<summary style="font-size: 1.5rem; font-weight: 600"><a href="https://github.com/sohamnandi77/Cpp-Data-Structures-And-Algorithm/blob/master/Array/README.md">Arrays</a></summary>
 <br>
 
 | Topics / Questions                                                             | Code / Comments                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
@@ -86,16 +86,42 @@ Data structure is a way or a format how your data is stored in memory for effeci
 <summary style="font-size: 1.5rem; font-weight: 600">Searching</summary>
 <br>
 
-| Topics / Questions                               | Code / Comments |
-| ------------------------------------------------ | --------------- |
-| Linear Search                                    |                 |
-| Binary Search - Recursive                        |                 |
-| Binary Search - Iterative                        |                 |
-| First Index Of Number - Recursive                |                 |
-| First Index Of Number - Iterative                |                 |
-| Last Index Of Number - Recursive                 |                 |
-| Last Index Of Number - Iterative                 |                 |
-| Count Occurences Of An Element In a Sorted Array |                 |
+| Topics / Questions                                            | Code / Comments |
+| ------------------------------------------------------------- | --------------- |
+| Linear Search                                                 |                 |
+| Binary Search - Recursive                                     |                 |
+| Binary Search - Iterative                                     |                 |
+| First Index Of Number - Recursive                             |                 |
+| First Index Of Number - Iterative                             |                 |
+| Last Index Of Number - Recursive                              |                 |
+| Last Index Of Number - Iterative                              |                 |
+| Count Occurences Of An Element In a Sorted Array              |                 |
+| Count 1s In a Binary Sorted Array                             |                 |
+| Search in an Infinite Sized Sorted Array (Exponential Search) |                 |
+| Find Index of '1' Infinite Sized Sorted Binary Array          |                 |
+| Square Root Floor                                             |                 |
+| Square Root Floor with Precision                              |                 |
+| Find the Peak Element                                         |                 |
+| Find Max In Bitonic Array                                     |                 |
+| Search In Bitonic Array                                       |                 |
+| Floor in a Sorted Array                                       |                 |
+| Ceil in a Sorted Array                                        |                 |
+| Next Alphabetical Element                                     |                 |
+| Check If the Array is Sorted & Rotated                        |                 |
+| Minimum in Sorted Rotated Array                               |                 |
+| Number of Times a Sorted Array is Rotated                     |                 |
+| Search in a Sorted Rotated Array                              |                 |
+| Maximum/Pivot in Sorted Rotated Array                         |                 |
+| Search in a Nearly Sorted Array                               |                 |
+| Count Only Repeated                                           |                 |
+| Minimum Difference Element in Sorted Array                    |                 |
+| Median Of two Sorted Array                                    |                 |
+| Allocate Minimum Pages                                        |                 |
+| Aggressive Cows SPOJ                                          |                 |
+| Paratha SPOJ                                                  |                 |
+| Painter's Partition                                           |                 |
+| EKO                                                           |                 |
+| Wining CB Scholarship                                         |                 |
 
 </details>
 
