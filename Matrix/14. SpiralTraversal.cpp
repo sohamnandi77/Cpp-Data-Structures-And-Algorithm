@@ -33,6 +33,7 @@ void Spiral(int arr[R][C])
         }
     }
 }
+
 void print(int arr[R][C])
 {
     for (int i = 0; i < R; i++)

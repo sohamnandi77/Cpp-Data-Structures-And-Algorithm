@@ -11,6 +11,7 @@ int Count1s(int arr[], int n)
     }
     return 0;
 }
+
 int main()
 {
     int arr[] = {0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1};

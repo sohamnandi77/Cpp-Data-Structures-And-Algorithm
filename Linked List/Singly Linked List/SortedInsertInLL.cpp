@@ -1,7 +1,9 @@
 #include <iostream>
 using namespace std;
+
 class Node
 {
+
 public:
     int data;
     Node *next;
@@ -29,6 +31,7 @@ void InsertAtHead(Node *&head, int val)
     NewNode->next = head;
     head = NewNode;
 }
+
 void InsertAtTail(Node *&head, int val)
 {
     Node *NewNode = new Node(val);
@@ -44,51 +47,33 @@ void InsertAtTail(Node *&head, int val)
     temp->next = NewNode;
 }
 
-Node *ReverseIterative(Node *head)
+Node *sortedInsert(Node *&head, int val)
 {
-    if (head == NULL || head->next == NULL)
-        return head;
-    Node *curr = head;
-    Node *prev = NULL;
-    while (curr != NULL)
+    Node *NewNode = new Node(val);
+    if (head == NULL)
+        return NewNode;
+    if (val < head->data)
     {
-        Node *next = curr->next;
-        curr->next = prev;
-        prev = curr;
-        curr = next;
+        NewNode->next = head;
+        return NewNode;
     }
-    return prev;
-}
+    Node *curr;
+    while (curr->next != NULL && curr->next->data < val)
+        curr = curr->next;
 
-Node *Reverse(Node *head)
-{
-    if (head == NULL || head->next == NULL)
-        return head;
-
-    Node *rest_head = Reverse(head->next);
-    Node *rest_tail = head->next;
-    // Node *temp = rest_head;
-    // while (temp->next != NULL)
-    //     temp = temp->next;
-    // temp->next = head;
-    rest_tail->next = head;
-    head->next = NULL;
-    return rest_head;
+    NewNode->next = curr->next;
+    curr->next = NewNode;
+    return head;
 }
 
 int main()
 {
     Node *head = NULL;
+    InsertAtTail(head, 0);
     InsertAtTail(head, 1);
-    InsertAtTail(head, 5);
-    InsertAtTail(head, 20);
-    InsertAtTail(head, 22);
-    InsertAtTail(head, 30);
+    InsertAtTail(head, 2);
+    InsertAtTail(head, 3);
     display(head);
-
-    // head = ReverseIterative(head);
-    head = Reverse(head);
-    display(head);
-
+    // cout << MidPoint(head) << endl;
     return 0;
 }

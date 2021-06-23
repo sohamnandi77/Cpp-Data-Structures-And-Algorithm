@@ -4,6 +4,19 @@
 #define ll long long
 using namespace std;
 
+// String Number Comparision
+bool com(string s1, string s2)
+{
+    int n = s1.length();
+    int m = s2.length();
+    if (n != m)
+        return n > m;
+    for (int i = 0; i < n; i++)
+        if ((s1[i] - '0') < (s2[i] - '0'))
+            return false;
+    return true;
+}
+
 // Function to compute num (mod a)
 int mod(string num, int a)
 {
@@ -23,7 +36,7 @@ void printFirstN(ll int n, ll int k)
     q.push("4");
     q.push("5");
     q.push("6");
-    while (stoi(q.front()) < n)
+    while (!com(q.front(), to_string(n)))
     {
         string curr = q.front();
         if (mod(curr, k) == 0) //# how to check a mod of very large number
@@ -37,7 +50,7 @@ void printFirstN(ll int n, ll int k)
 
 int main()
 {
-    ll int n = 10000000;
+    ll int n = 10000000000000;
     ll int k = 787;
     if (n >= k && n >= 4)
         printFirstN(n, k);

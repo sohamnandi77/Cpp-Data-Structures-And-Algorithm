@@ -48,6 +48,8 @@ void InsertAtTail(Node *&head, int val)
 
 int MidPoint(Node *head)
 {
+    if (head == NULL)
+        return -1;
     Node *slow = head;
     Node *fast = head->next;
     while (fast != NULL && fast->next != NULL)

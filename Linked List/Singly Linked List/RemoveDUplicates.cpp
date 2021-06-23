@@ -44,36 +44,20 @@ void InsertAtTail(Node *&head, int val)
     temp->next = NewNode;
 }
 
-Node *ReverseIterative(Node *head)
+void remDup(Node *&head)
 {
-    if (head == NULL || head->next == NULL)
-        return head;
     Node *curr = head;
-    Node *prev = NULL;
-    while (curr != NULL)
+    while (curr != NULL && curr->next != NULL)
     {
-        Node *next = curr->next;
-        curr->next = prev;
-        prev = curr;
-        curr = next;
+        if (curr->data == curr->next->data)
+        {
+            Node *temp = curr->next;
+            curr->next = curr->next->next;
+            delete temp;
+        }
+        else
+            curr = curr->next;
     }
-    return prev;
-}
-
-Node *Reverse(Node *head)
-{
-    if (head == NULL || head->next == NULL)
-        return head;
-
-    Node *rest_head = Reverse(head->next);
-    Node *rest_tail = head->next;
-    // Node *temp = rest_head;
-    // while (temp->next != NULL)
-    //     temp = temp->next;
-    // temp->next = head;
-    rest_tail->next = head;
-    head->next = NULL;
-    return rest_head;
 }
 
 int main()
@@ -86,8 +70,7 @@ int main()
     InsertAtTail(head, 30);
     display(head);
 
-    // head = ReverseIterative(head);
-    head = Reverse(head);
+    remDup(head);
     display(head);
 
     return 0;

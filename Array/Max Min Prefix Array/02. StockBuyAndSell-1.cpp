@@ -35,9 +35,7 @@ int maxProfitSpace(int arr[], int n)
             curr_max = arr[i];
         }
         else
-        {
             aux[i] = curr_max;
-        }
     }
     for (int i = 0; i < n; i++)
     {

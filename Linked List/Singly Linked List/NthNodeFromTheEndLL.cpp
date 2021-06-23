@@ -40,40 +40,32 @@ void InsertAtTail(Node *&head, int val)
 
     Node *temp = head;
     while (temp->next != NULL)
+    {
         temp = temp->next;
+    }
     temp->next = NewNode;
 }
 
-Node *ReverseIterative(Node *head)
+int NthNode(Node *head, int x)
 {
-    if (head == NULL || head->next == NULL)
-        return head;
-    Node *curr = head;
-    Node *prev = NULL;
-    while (curr != NULL)
+    if (head == NULL)
+        return -1;
+    Node *fast = head;
+    int curr = 1;
+    while (fast != NULL && curr < x)
     {
-        Node *next = curr->next;
-        curr->next = prev;
-        prev = curr;
-        curr = next;
+        fast = fast->next;
+        curr++;
     }
-    return prev;
-}
-
-Node *Reverse(Node *head)
-{
-    if (head == NULL || head->next == NULL)
-        return head;
-
-    Node *rest_head = Reverse(head->next);
-    Node *rest_tail = head->next;
-    // Node *temp = rest_head;
-    // while (temp->next != NULL)
-    //     temp = temp->next;
-    // temp->next = head;
-    rest_tail->next = head;
-    head->next = NULL;
-    return rest_head;
+    if (curr != x)
+        return -1;
+    Node *slow = head;
+    while (fast != NULL)
+    {
+        slow = slow->next;
+        fast = fast->next;
+    }
+    return slow->data;
 }
 
 int main()
@@ -86,8 +78,7 @@ int main()
     InsertAtTail(head, 30);
     display(head);
 
-    // head = ReverseIterative(head);
-    head = Reverse(head);
+    cout << NthNode(head, 2) << endl;
     display(head);
 
     return 0;
