@@ -28,7 +28,7 @@ int countAndMerge(int arr[], int l, int m, int r)
     for (int j = 0; j < n2; j++)
         right[j] = arr[m + 1 + j];
 
-    int i = 0, j = 0, k = l, res = 0;
+    int i = 0, j = 0, k = l, res = 0; // ? res = 0
     while (i < n1 && j < n2)
     {
         if (left[i] <= right[j])
@@ -36,7 +36,7 @@ int countAndMerge(int arr[], int l, int m, int r)
         else
         {
             arr[k++] = right[j++];
-            res += n1 - i;
+            res += n1 - i; // ? add the elements greater
         }
     }
     while (i < n1)
