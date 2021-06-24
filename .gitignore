@@ -1,4 +1,4 @@
-# **/.vscode/
-# *.py
-# **/try/
-# *.exe
+**/.vscode/
+*.py
+try/
+*.exe
