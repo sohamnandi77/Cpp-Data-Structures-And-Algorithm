@@ -47,7 +47,8 @@ ll getWaterSpace(ll arr[], ll n)
 
     // Water stored
     for (ll i = 1; i < n - 1; i++)
-        res = res + (min(lMax[i], rMax[i]) - arr[i]);
+        // * Here we are talking lMax[i] and rMax[i] instead of lMax[i-1] and rMax[i+1] as it will also handle the case when lMax[i-1] < arr[i]
+        res += (min(lMax[i], rMax[i]) - arr[i]);
 
     delete[] lMax, rMax;
     return res;
@@ -84,7 +85,7 @@ ll getWaterOP(ll arr[], ll n)
 int main()
 {
 
-    ll arr[] = {3, 0, 1, 2, 5}, n = 5;
+    ll arr[] = {3, 4, 1, 6, 5}, n = 5;
 
     cout << "Noob Solution" << endl;
     cout << getWaterNoob(arr, n) << endl;
